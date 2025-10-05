@@ -1,4 +1,3 @@
-Nour Abo Ghaloon
 Travel Management System (Laravel API)
  Project Description
 A complete travel booking and management system API built using Laravel 10, designed to automate and simplify trip planning, booking, and management.
@@ -123,7 +122,6 @@ DELETE /api/media/{media_id} حذف صورة معينة
 تحسين واجهات عرض البيانات
 
  المطوّرة
-
 [نورأبوغالون]
 مطوّرة Backend متخصصة في Laravel API
  البريد الإلكتروني: nouraboghaloon@gmail.com
