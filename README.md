@@ -1,66 +1,132 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Nour Abo Ghaloon
+Travel Management System (Laravel API)
+ Project Description
+A complete travel booking and management system API built using Laravel 10, designed to automate and simplify trip planning, booking, and management.
+The system allows users to browse trips, make reservations, and manage their wallet balance seamlessly.
+It supports both general and custom trips, with integrations for hotels, restaurants, and other travel entities.
+Key Features
+Manage both public and custom trips
+Full reservation system (trips, hotels, restaurants)
+Integrated wallet system – balance deducted automatically upon booking
+Cloudinary image upload with precise image updates via media_id
+Complete media management (upload, update, delete)
+Request validation using Form Request classes
+Real-time notifications for bookings (instead of emails)
+Supports advanced relationships (Polymorphic, One-to-Many, Many-to-Many)
+Tech Stack
+Backend: Laravel 10
+Database: MySQL
+Storage: Cloudinary
+Auth: Laravel Sanctum
+Notifications: Laravel Notifications
+Validation: Form Requests
+Architecture: RESTful API
+Project Structure
+app/
+ ├── Http/
+ │   ├── Controllers/
+ │   ├── Requests/
+ │   ├── Resources/
+ │   └── Middleware/
+ ├── Models/
+ ├── Services/
+ └── Notifications/
+ 
+ Installation & Setup
+# Clone the repository
+git clone https://github.com/username/repository-name.git
+# Navigate to the project folder
+cd repository-name
+# Install dependencies
+composer install
+# Copy environment file
+cp .env.example .env
+# Generate app key
+php artisan key:generate
+# Run migrations and seeders
+php artisan migrate --seed
+# Serve the project
+php artisan serve
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+API Endpoints Examples
+Method Endpoint Description
+GET /api/trips Fetch all available trips
+POST /api/reservations Create a new reservation
+POST /api/wallet/deposit Add funds to wallet
+PUT /api/media/{media_id} Update a specific image
+DELETE /api/media/{media_id} Delete a specific image
 
-## About Laravel
+Future Improvements
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Add electronic payment gateway (e.g., Stripe / PayPal)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Add trip rating and review system
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Create a dashboard for admin analytics
 
-## Learning Laravel
+Add filtering and recommendation system
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Developer
+[Nour Abo Ghaloon]
+Backend Developer | Laravel API Specialist
+ Email: nouraboghaloon@gmail.com
+ LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/nour-abo-ghaloon-5735a9387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
+ GitHub: github.com/Nour-Ghaloon
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+🇸🇾 نظام تنظيم الرحلات السياحية (Laravel API)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+ وصف المشروع
+نظام متكامل لتنظيم وحجز الرحلات السياحية تم تطويره باستخدام Laravel 10 (API).
+يهدف إلى تسهيل عملية إدارة الرحلات والحجوزات والمحفظة الإلكترونية للمستخدمين، ويتيح دمج الفنادق والمطاعم والأنشطة ضمن الرحلة الواحدة.
+ الميزات الأساسية
+ إدارة الرحلات العامة والمخصصة
+ نظام حجوزات يشمل الرحلات، الفنادق، والمطاعم
+ محفظة إلكترونية تُخصم منها المبالغ تلقائيًا عند الحجز
+ رفع الصور إلى Cloudinary مع إمكانية تعديل الصور عبر media_id
+ إدارة الوسائط (رفع – تعديل – حذف)
+ تحقق من صحة البيانات عبر Form Requests
+ إشعارات فورية عند تنفيذ الحجوزات
+ علاقات مرنة بين الجداول (Polymorphic – One to Many – Many to Many)
 
-## Laravel Sponsors
+ التقنيات المستخدمة
+الجانب الخلفي (Backend): Laravel 10
+قاعدة البيانات: MySQL
+تخزين الصور: Cloudinary
+نظام الدخول: Laravel Sanctum
+الإشعارات: Laravel Notifications
+التحقق من البيانات: Form Requests
+نمط العمل: RESTful API
+ خطوات التشغيل
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+git clone https://github.com/username/repository-name.git
+cd repository-name
+composer install
+cp .env.example .env
+php artisan key:generate
+php artisan migrate --seed
+php artisan serve
 
-### Premium Partners
+ أمثلة على نقاط النهاية (Endpoints)
+الطريقة الرابط الوظيفة
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+GET /api/trips عرض جميع الرحلات
+POST /api/reservations إنشاء حجز جديد
+POST /api/wallet/deposit إضافة رصيد إلى المحفظة
+PUT /api/media/{media_id} تعديل صورة معينة
+DELETE /api/media/{media_id} حذف صورة معينة
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+التحسينات المستقبلية
+إضافة نظام تقييم الرحلات
+دعم بوابات الدفع الإلكتروني
+تطوير لوحة تحكم للمسؤولين
+تحسين واجهات عرض البيانات
 
-## Code of Conduct
+ المطوّرة
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+[نورأبوغالون]
+مطوّرة Backend متخصصة في Laravel API
+ البريد الإلكتروني: nouraboghaloon@gmail.com
+ لينكدإن:
+ https://www.linkedin.com/in/nour-abo-ghaloon-5735a9387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+ GitHub: github.com/Nour-Ghaloon
